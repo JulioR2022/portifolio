@@ -32,7 +32,10 @@ jobs:
       - name: Install dependencies & Build
         run: |
           npm install
-          npm run build
+          cd apps/web
+          npx vite build
+          echo "=== Verificando a pasta gerada ==="
+          ls -la dist/
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
