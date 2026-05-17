@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ProjectCard from '@/components/ProjectCard.jsx';
+import imgMonitoramento1 from '@/assets/images/image1.png';
+import imgMonitoramento2 from '@/assets/images/image2.png';
+import imgMonitoramento3 from '@/assets/images/image3.png';
 
 function ProjetosPage() {
   const projects = [
@@ -19,9 +22,9 @@ function ProjetosPage() {
         'Gerenciamento de Dados: Opções de exportação para CSV e limpeza do banco de dados.'
       ],
       images: [
-        'https://horizons-cdn.hostinger.com/1de777e7-96a7-4c27-8a51-2b028a154b8a/a89e23f78cc4fe2ac7a6a6ca52d072bb.png',
-        'https://horizons-cdn.hostinger.com/1de777e7-96a7-4c27-8a51-2b028a154b8a/a45434cf6d9a09f2efcbbffd2084e865.png',
-        'https://horizons-cdn.hostinger.com/1de777e7-96a7-4c27-8a51-2b028a154b8a/0d95eb6d8ef38b0c83d6a4153bb37f19.png'
+        imgMonitoramento1,
+        imgMonitoramento2,
+        imgMonitoramento3
       ],
       technologies: [
         'Frontend (React + Vite)', 

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from '@/components/ui/sonner';
-import ScrollToTop from './components/ScrollToTop';
-import HomePage from './pages/HomePage';
-import SobreMimPage from './pages/SobreMimPage';
-import ProjetosPage from './pages/ProjetosPage';
-import ContatoPage from './pages/ContatoPage';
+import ScrollToTop from './components/ScrollToTop.jsx';
+import HomePage from './pages/HomePage.jsx';
+import SobreMimPage from './pages/SobreMimPage.jsx';
+import ProjetosPage from './pages/ProjetosPage.jsx';
+import ContatoPage from './pages/ContatoPage.jsx';
 
 function App() {
     return (

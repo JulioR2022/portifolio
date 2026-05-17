@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import SkillBadge from '@/components/SkillBadge.jsx';
+import myPhoto from '@/assets/images/eu.png';
+
 
 function SobreMimPage() {
   const skills = {
@@ -40,7 +42,7 @@ function SobreMimPage() {
                   transition={{ duration: 0.5 }}
                 >
                   <img 
-                    src="https://horizons-cdn.hostinger.com/1de777e7-96a7-4c27-8a51-2b028a154b8a/4a18bbd094c435d7e110ade24f2e3f7e.png" 
+                    src={myPhoto} 
                     alt="Julio Roberto portrait"
                     className="w-full rounded-2xl shadow-lg object-cover aspect-square md:aspect-auto"
                   />

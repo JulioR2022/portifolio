@@ -1,19 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail, MapPin, Phone } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ContactForm from '@/components/ContactForm';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import Header from '@/components/Header.jsx';
+import Footer from '@/components/Footer.jsx';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import SocialLink from '@/components/SocialLink';
+import SocialLink from '@/components/SocialLink.jsx';
 
 function ContatoPage() {
   return (
     <>
       <Helmet>
-        <title>{`Contato - DevPortfolio`}</title>
-        <meta name="description" content="Entre em contato para discutir projetos, oportunidades de colaboração ou apenas para dizer olá." />
+        <title>{`Contato - Julio Roberto`}</title>
+        <meta name="description" content="Entre em contato para discutir projetos, oportunidades de colaboração." />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -34,104 +33,47 @@ function ContatoPage() {
                 Entre em contato
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Tem um projeto em mente? Vamos conversar sobre como posso ajudar
+                Tem um projeto em mente ou uma oportunidade? Vamos conversar!
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              {/* Contact Form */}
+            <div className="max-w-2xl mx-auto">
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <Card className="shadow-lg">
-                  <CardHeader>
-                    <CardTitle>Envie uma mensagem</CardTitle>
-                    <CardDescription>
-                      Preencha o formulário abaixo e entrarei em contato em breve
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ContactForm />
-                  </CardContent>
-                </Card>
-              </motion.div>
-
-              {/* Contact Information */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
                 className="space-y-6"
               >
                 <Card className="shadow-lg">
-                  <CardHeader>
-                    <CardTitle>Informações de contato</CardTitle>
-                    <CardDescription>
-                      Outras formas de entrar em contato
+                  <CardHeader className="text-center">
+                    <CardTitle className="text-2xl">Informações de contato</CardTitle>
+                    <CardDescription className="text-base">
+                      Sinta-se à vontade para me contatar através dos canais abaixo
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <Mail className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-card-foreground">Email</p>
-                        <a 
-                          href="mailto:dev@example.com" 
-                          className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                        >
-                          juliobsb792@gmail.com
-                        </a>
-                      </div>
+                  <CardContent className="space-y-8 pt-4">
+                    <div className="flex flex-col items-center justify-center gap-6">
+                      <a 
+                        href="mailto:dev@example.com" 
+                        className="flex items-center gap-3 text-lg font-medium text-foreground hover:text-primary transition-colors duration-200"
+                      >
+                        <div className="bg-primary/10 p-3 rounded-full">
+                          <Mail className="h-6 w-6 text-primary" />
+                        </div>
+                        juliobsb792@gmail.com
+                      </a>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <Phone className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-card-foreground">Telefone</p>
-                        <p className="text-muted-foreground">+55 (61) 98372-0516</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                      <div>
-                        <p className="font-medium text-card-foreground">Localização</p>
-                        <p className="text-muted-foreground">Distrito Federal, Brasil</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-lg">
-                  <CardHeader>
-                    <CardTitle>Redes sociais</CardTitle>
-                    <CardDescription>
-                      Conecte-se comigo nas redes sociais
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex gap-2">
+                    <div className="pt-6 border-t flex justify-center gap-4">
                       <SocialLink 
-                        href="https://github.com" 
+                        href="https://github.com/JulioR2022" 
                         icon={Github} 
                         label="GitHub"
                       />
                       <SocialLink 
-                        href="https://linkedin.com" 
+                        href="https://www.linkedin.com/in/julio-roberto-b94136301/" 
                         icon={Linkedin} 
                         label="LinkedIn"
-                      />
-                      <SocialLink 
-                        href="https://twitter.com" 
-                        icon={Twitter} 
-                        label="Twitter"
-                      />
-                      <SocialLink 
-                        href="mailto:dev@example.com" 
-                        icon={Mail} 
-                        label="Email"
                       />
                     </div>
                   </CardContent>
