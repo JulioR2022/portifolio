@@ -40,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/apps/web' # O caminho onde seu "npm run build" salva os arquivos finais
+          path: './apps/web/dist'
           
       - name: Deploy to GitHub Pages
         id: deployment
