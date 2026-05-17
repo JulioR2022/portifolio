@@ -63,10 +63,10 @@ function SobreMimPage() {
                   
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      Olá, eu sou o <strong>Julio Roberto</strong>. Desenvolvedor em busca de oportunidade de estágio. Apaixonado por Machine Learning, análise de dados e desenvolvimento de soluções inteligentes com IA.
+                      Olá, sou o Julio Roberto. Sou desenvolvedor e busco minha primeira oportunidade de estágio para contribuir em projetos inovadores e aprimorar meu aprendizado.
                     </p>
                     <p>
-                      Minha jornada na tecnologia é movida pela curiosidade de entender como os dados podem ser transformados em conhecimento e soluções práticas. Tenho focado meus estudos em inteligência artificial e na construção de modelos que resolvem problemas reais.
+                      Sou apaixonado por resolver problemas através da tecnologia, seja estruturando a lógica de um software ou analisando dados para extrair insights valiosos. Tenho expandido meu repertório técnico combinando boas práticas de desenvolvimento com o estudo de algoritmos de Machine Learning e soluções baseadas em IA.
                     </p>
                     <p>
                       Estou sempre em busca de novos desafios que me permitam aplicar meus conhecimentos, aprender com profissionais experientes e contribuir para projetos inovadores.
