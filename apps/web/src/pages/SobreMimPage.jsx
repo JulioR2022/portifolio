@@ -10,7 +10,7 @@ import myPhoto from '@/assets/images/eu.png';
 function SobreMimPage() {
   const skills = {
     languages: ['Python (Pandas, NumPy, Scikit-learn)', 'Java', 'C'],
-    databases: ['MySQL', 'SQL'],
+    databases: ['MySQL', 'SQL', 'PostegreSQL'],
     ml_ai: ['PyTorch', 'Deep Learning', 'EDA'],
     devops: ['Docker', 'Git'],
     idiomas: ['Inglês (Intermediário: escrita, leitura, conversação)', 'Espanhol (Intermediário: escrita, leitura, conversação)'],
