@@ -12,7 +12,7 @@ function ProjetosPage() {
   const projects = [
     {
       title: 'Sistema de Monitoramento com IA',
-      description: 'Sistema fullstack abrangente para detecção de objetos com IA. Permite o upload de imagens no frontend, processamento via API REST no backend utilizando o modelo YOLOv8, armazenamento dos resultados em banco de dados e retorno da imagem processada com as detecções (bounding boxes) para visualização do usuário.',
+      description: 'Sistema fullstack abrangente para detecção de objetos com IA. Permite o upload de imagens no frontend, processamento via API REST no backend utilizando o modelo YOLOv8, armazenamento dos resultados em banco de dados e retorno da imagem processada com as detecções (bounding boxes) para visualização do usuário. Link do repositorio github: https://github.com/JulioR2022/monitoramento',
       features: [
         'Detecção Avançada: Identificação e contagem de objetos utilizando YOLOv8.',
         'Filtro de Classes: Seleção personalizada de quais objetos detectar.',
