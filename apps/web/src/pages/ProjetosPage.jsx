@@ -35,6 +35,30 @@ function ProjetosPage() {
       ],
       liveLink: 'https://monitoramento-frontend.onrender.com/'
     }
+    ,
+    {
+      title: 'Mini-Heroku (PaaS) [EM DESENVOLVIMENTO]',
+      description: 'Plataforma como Serviço (PaaS) baseada na arquitetura do Heroku. O sistema permite que usuários se cadastrem, criem projetos e realizem deploys automatizados. O backend clona repositórios dinamicamente, constrói imagens Docker e orquestra os containers gerenciando as portas automaticamente. Link do repositorio github: https://github.com/JulioR2022/mini-heroku',
+      features: [
+        'Deploy Automatizado: Clonagem de repositórios git e build de imagens Docker diretamente pelo backend.',
+        'Orquestração de Containers: Integração nativa com Docker SDK para iniciar, parar e remover os containers de forma segura.',
+        'Mapeamento Dinâmico: Alocação automática de portas do Host e captura em tempo real após a subida do container.',
+        'Autenticação Segura: Sistema de login e registro utilizando JWT (JSON Web Tokens) e senhas criptografadas com bcrypt.',
+        'Banco de Dados Relacional: Modelagem completa usando SQLAlchemy (PostgreSQL) para gerenciar usuários, projetos e o histórico de deployments.'
+      ],
+      images: [
+        //imgMiniHeroku1, 
+        //imgMiniHeroku2
+      ],
+      technologies: [
+        'Backend (Python + FastAPI)', 
+        'Orquestração (Docker SDK + GitPython)', 
+        'Banco de Dados (PostgreSQL + SQLAlchemy)', 
+        'Segurança (JWT)'
+      ],
+      liveLink: ''
+    }
+
   ];
 
   return (
