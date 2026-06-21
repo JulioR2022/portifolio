@@ -7,6 +7,11 @@ import ProjectCard from '@/components/ProjectCard.jsx';
 import imgMonitoramento1 from '@/assets/images/image1.png';
 import imgMonitoramento2 from '@/assets/images/image2.png';
 import imgMonitoramento3 from '@/assets/images/image3.png';
+import imgMiniHeroku1 from '@/assets/images/image4.png';
+import imgMiniHeroku2 from '@/assets/images/image5.png';
+import imgMiniHeroku3 from '@/assets/images/image6.png';
+import imgMiniHeroku4 from '@/assets/images/image7.png';
+
 
 function ProjetosPage() {
   const projects = [
@@ -47,8 +52,10 @@ function ProjetosPage() {
         'Banco de Dados Relacional: Modelagem completa usando SQLAlchemy (PostgreSQL) para gerenciar usuários, projetos e o histórico de deployments.'
       ],
       images: [
-        //imgMiniHeroku1, 
-        //imgMiniHeroku2
+        imgMiniHeroku1,
+        imgMiniHeroku2,
+        imgMiniHeroku3,
+        imgMiniHeroku4
       ],
       technologies: [
         'Backend (Python + FastAPI)', 
@@ -56,7 +63,7 @@ function ProjetosPage() {
         'Banco de Dados (PostgreSQL + SQLAlchemy)', 
         'Segurança (JWT)'
       ],
-      liveLink: ''
+      liveLink: 'https://github.com/JulioR2022/mini-heroku'
     }
 
   ];
