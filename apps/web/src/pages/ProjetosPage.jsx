@@ -42,14 +42,14 @@ function ProjetosPage() {
     }
     ,
     {
-      title: 'Mini-Heroku (PaaS) [EM DESENVOLVIMENTO]',
-      description: 'Plataforma como Serviço (PaaS) baseada na arquitetura do Heroku. O sistema permite que usuários se cadastrem, criem projetos e realizem deploys automatizados. O backend clona repositórios dinamicamente, constrói imagens Docker e orquestra os containers gerenciando as portas automaticamente. Link do repositorio github: https://github.com/JulioR2022/mini-heroku',
+      title: 'Mini-Heroku (PaaS)',
+      description: 'Plataforma como Serviço (PaaS) inspirada na arquitetura do Heroku. O sistema possui uma arquitetura baseada em micro-serviços com filas assíncronas no Redis para deploy e orquestração de containers Docker, além de streaming de logs em tempo real via WebSockets. Link do repositorio github: https://github.com/JulioR2022/mini-heroku',
       features: [
-        'Deploy Automatizado: Clonagem de repositórios git e build de imagens Docker diretamente pelo backend.',
-        'Orquestração de Containers: Integração nativa com Docker SDK para iniciar, parar e remover os containers de forma segura.',
-        'Mapeamento Dinâmico: Alocação automática de portas do Host e captura em tempo real após a subida do container.',
-        'Autenticação Segura: Sistema de login e registro utilizando JWT (JSON Web Tokens) e senhas criptografadas com bcrypt.',
-        'Banco de Dados Relacional: Modelagem completa usando SQLAlchemy (PostgreSQL) para gerenciar usuários, projetos e o histórico de deployments.'
+        'Processamento Assíncrono: Separação de tarefas em workers dedicados (build-worker para deploys e fast-worker para stop/delete) consumindo filas do Redis.',
+        'Logs em Tempo Real: Transmissão de logs de build e execução via WebSockets + Redis Pub/Sub com histórico temporário mantido por 1 hora.',
+        'Deploy Automatizado: Clonagem de repositórios Git, build de imagens Docker e alocação dinâmica de portas do Host.',
+        'Gerenciamento de Recursos: Configuração de variáveis de ambiente pela UI e alocação de CPU/RAM de acordo com o plano do usuário (Free/Premium).',
+        'Autenticação & Modelagem Relacional: Sistema de login com JWT e ORM SQLAlchemy em PostgreSQL para usuários, projetos e histórico de deployments.'
       ],
       images: [
         imgMiniHeroku1,
@@ -58,10 +58,12 @@ function ProjetosPage() {
         imgMiniHeroku4
       ],
       technologies: [
-        'Backend (Python + FastAPI)', 
-        'Orquestração (Docker SDK + GitPython)', 
-        'Banco de Dados (PostgreSQL + SQLAlchemy)', 
-        'Segurança (JWT)'
+        'Frontend (React + TypeScript + Vite)',
+        'Backend (Python + FastAPI + WebSockets)',
+        'Filas & Mensageria (Redis + Pub/Sub)',
+        'Orquestração (Docker SDK + GitPython)',
+        'Banco de Dados (PostgreSQL + SQLAlchemy)',
+        'Segurança (JWT + Bcrypt)'
       ],
       liveLink: 'https://github.com/JulioR2022/mini-heroku'
     }
