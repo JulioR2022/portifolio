@@ -44,7 +44,7 @@ function SobreMimPage() {
                   <img 
                     src={myPhoto} 
                     alt="Julio Roberto portrait"
-                    className="w-full rounded-2xl shadow-lg object-cover aspect-square md:aspect-auto"
+                    className="w-full max-w-sm mx-auto rounded-2xl shadow-lg h-auto"
                   />
                 </motion.div>
 
