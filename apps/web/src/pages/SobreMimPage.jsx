@@ -18,7 +18,7 @@ function SobreMimPage() {
     backend: ['Python', 'FastAPI'],
     ia_visao: ['YOLOv8', 'Ultralytics', 'OpenCV'],
     db_new: ['MySQL 8.0'],
-    infra: ['Docker', 'Docker Compose']
+    infra: ['Docker', 'Microsserviços']
   };
 
   return (
