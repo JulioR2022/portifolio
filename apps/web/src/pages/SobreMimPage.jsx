@@ -9,7 +9,7 @@ import myPhoto from '@/assets/images/eu.png';
 
 function SobreMimPage() {
   const skills = {
-    languages: ['Python (Pandas, NumPy, Scikit-learn)', 'Java', 'C'],
+    languages: ['Python (Pandas, NumPy, Scikit-learn, Pytorch)', 'Java', 'C'],
     databases: ['MySQL', 'SQL', 'PostegreSQL'],
     ml_ai: ['PyTorch', 'Deep Learning', 'EDA'],
     devops: ['Docker', 'Git'],
@@ -17,7 +17,7 @@ function SobreMimPage() {
     frontend: ['React', 'Vite'],
     backend: ['Python', 'FastAPI'],
     ia_visao: ['YOLOv8', 'Ultralytics', 'OpenCV'],
-    db_new: ['MySQL 8.0'],
+    db_new: ['MySQL'],
     infra: ['Docker', 'Microsserviços']
   };
 
